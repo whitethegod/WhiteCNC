@@ -1,0 +1,34 @@
+<<$clear>>
+[8;35;109t [38;2;255;255;255mUser Datagram Protocol[0m
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]DNS               [38;2;255;255;255m[4mHigh GBPS amplification using DNS[0m                                      [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]VALVE             [38;2;255;255;255m[4mSpoofed UDP data designed for Valve Source Engine using TSource 1 & 2[0m  [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]UDP               [38;2;255;255;255m[4mSimple udp flood, but with high GBPS[0m                                   [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]DISCORD           [38;2;255;255;255m[4mUdp flood with custom payload to bypass cf/dc voip servers[0m             [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]GAME              [38;2;255;255;255m[4mHit game servers that use UDP servers.[0m                                 [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]DISCORD-2         [38;2;255;255;255m[4mUdp flood with custom payload to bypass google voip servers[0m              [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]UDP-BYPASS        [38;2;255;255;255m[4mSpoofed UDP data with low lenght for high amount of PPS[0m                  [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+ [38;2;255;255;255mTransmission Control Protocol[0m
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]TCP-BOMB          [38;2;255;255;255m[4mHigh PPS flood with PSH-ACK, SYN-ACK reflections & SLE, SRE[0m            [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]SYN               [38;2;255;255;255m[4mHigh volume of SYN-ACK reflection via source port 80/443[0m               [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]OVH-BYPASS        [38;2;255;255;255m[4mSpoofed PSH-ACK Flood with specialized options & VAC whitelited ips[0m    [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]TCP-BYPASS        [38;2;255;255;255m[4mBypass protected targets that use TCP servers.[0m                           [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+
+ [38;2;255;255;255mLayer 4 Methods VIP [Raw][0m
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]UDP-RAW           [38;2;255;255;255m[4mHigh traffic UDP coming from IoT[0m                                         [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]PPS-RAW           [38;2;255;255;255m[4mHigh traffic UDP coming from IoT with very low LEN[0m                       [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]SYN-RAW           [38;2;255;255;255m[4mRaw SYN traffic for TCP based targets[0m                                    [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]RAND-RAW          [38;2;255;255;255m[4mHigh traffic random UDP data being sent from IoT[0m                         [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]RDP-RAW           [38;2;255;255;255m[4mHigh traffic raw handshake data being sent from IoT[0m                      [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+
+ [38;2;255;255;255mLayer 7 Methods [Bypass][0m
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL7[38;2;255;0;0m]HTTPS             [38;2;255;255;255m[4mMethod for highest requests per second[0m                                 [38;2;255;255;255m[[0mDEFAULT[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL7[38;2;255;0;0m]HTTPS-VIP         [38;2;255;255;255m[4mMethod for highest requests per second and very Powerfull[0m                [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL7[38;2;255;0;0m]BROWSER           [38;2;255;255;255m[4mSlow RPS, made for bypassing cloudflare UAM protection[0m                   [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL7[38;2;255;0;0m]CLOUDFLARE        [38;2;255;255;255m[4mPowerfull HTTP/2 flood designed to bypass HTTP-DDOS[0m                      [38;2;255;255;255m[[38;2;255;255;0mVIP[38;2;255;255;255m]
+
+ [38;2;255;255;255mLayer 4 Private [Raw][0m
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]PPS-NEVER         [38;2;255;255;255m[4mPrivate Raw with 12 len, high uptime & 0 cooldown[0m                      [38;2;255;255;255m[<gradient name="sigma">PRIVATE</gradient>[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]HTTP-NEVER        [38;2;255;255;255m[4mMethod for highest requests per second and very Powerfull (the best)[0m   [38;2;255;255;255m[<gradient name="sigma">PRIVATE</gradient>[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]DNS-NEVER         [38;2;255;255;255m[4mHigh GBPS amplification using DNS (better than any other DNS method)[0m   [38;2;255;255;255m[<gradient name="sigma">PRIVATE</gradient>[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]ACK-NEVER         [38;2;255;255;255m[4mPrivate Raw with 12 len, high uptime & 0 cooldown[0m                      [38;2;255;255;255m[<gradient name="sigma">PRIVATE</gradient>[38;2;255;255;255m]
+   [38;2;255;0;0m│ [38;2;255;0;0m[[38;2;255;255;255mL4[38;2;255;0;0m]UDP-NEVER         [38;2;255;255;255m[4mPrivate Raw with 1024 len, high uptime & 0 cooldown[0m                    [38;2;255;255;255m[<gradient name="sigma">PRIVATE</gradient>[38;2;255;255;255m]

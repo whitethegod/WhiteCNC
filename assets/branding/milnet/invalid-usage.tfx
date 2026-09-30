@@ -1,0 +1,3 @@
+[38;2;0;0;0m<gradient name="background_white">Invalid usage!</gradient>
+[38;2;0;0;0m<gradient name="background_white">Usage: <method> <target> <port> <time></gradient>
+[38;2;0;0;0m<gradient name="background_white">Example: dns 70.70.70.70 53 60</gradient>

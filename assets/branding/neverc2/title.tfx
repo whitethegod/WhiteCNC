@@ -1,0 +1,1 @@
+<<$cnc.Spinner>> ☃ + Sessions: [<<$cnc.Online>>] + Running: [<<$cnc.Usedslots>>] + Expiry: [<<$user.Expiry>>] + Uptime: <<$cnc.UptimeMin>> min(s) +  ☃ <<$cnc.Spinner>>

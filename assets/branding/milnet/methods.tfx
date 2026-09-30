@@ -1,0 +1,34 @@
+User Datagram Protocol
+   │ [L4]DNS               High GBPS amplification using DNS                                      [DEFAULT]
+   │ [L4]VALVE             Spoofed UDP data designed for Valve Source Engine using TSource 1 & 2  [DEFAULT]
+   │ [L4]UDP               Simple udp flood, but with high GBPS                                   [DEFAULT]
+   │ [L4]DISCORD           Udp flood with custom payload to bypass cf/dc voip servers             [DEFAULT]
+   │ [L4]GAME              Hit game servers that use UDP servers.                                 [DEFAULT]
+   │ [L4]DISCORD-2         Udp flood with custom payload to bypass google voip servers            [VIP]
+   │ [L4]UDP-BYPASS        Spoofed UDP data with low lenght for high amount of PPS                [VIP]
+
+Transmission Control Protocol
+   │ [L4]TCP-BOMB          High PPS flood with PSH-ACK, SYN-ACK reflections & SLE, SRE            [DEFAULT]
+   │ [L4]SYN               High volume of SYN-ACK reflection via source port 80/443               [DEFAULT]
+   │ [L4]OVH-BYPASS        Spoofed PSH-ACK Flood with specialized options & VAC whitelited ips    [DEFAULT]
+   │ [L4]TCP-BYPASS        Bypass protected targets that use TCP servers.                         [VIP]
+
+Layer 4 Methods VIP [Raw]
+   │ [L4]UDP-RAW           High traffic UDP coming from IoT                                       [VIP]
+   │ [L4]PPS-RAW           High traffic UDP coming from IoT with very low LEN                     [VIP]
+   │ [L4]SYN-RAW           Raw SYN traffic for TCP based targets                                  [VIP]
+   │ [L4]RAND-RAW          High traffic random UDP data being sent from IoT                       [VIP]
+   │ [L4]RDP-RAW           High traffic raw handshake data being sent from IoT                    [VIP]
+
+Layer 7 Methods [Bypass]
+   │ [L7]HTTPS             Method for highest requests per second                                 [DEFAULT]
+   │ [L7]HTTPS-VIP         Method for highest requests per second and very Powerfull              [VIP]
+   │ [L7]BROWSER           Slow RPS, made for bypassing cloudflare UAM protection                 [VIP]
+   │ [L7]CLOUDFLARE        Powerfull HTTP/2 flood designed to bypass HTTP-DDOS                    [VIP]
+
+Layer 4 Private [Raw]
+   │ [L4]PPS-NEVER         Private Raw with 12 len, high uptime & 0 cooldown                      [PRIVATE]
+   │ [L4]HTTP-NEVER        Method for highest requests per second and very Powerfull (the best)   [PRIVATE]
+   │ [L4]DNS-NEVER         High GBPS amplification using DNS (better than any other DNS method)   [PRIVATE]
+   │ [L4]ACK-NEVER         Private Raw with 12 len, high uptime & 0 cooldown                      [PRIVATE]
+   │ [L4]UDP-NEVER         Private Raw with 1024 len, high uptime & 0 cooldown                    [PRIVATE]

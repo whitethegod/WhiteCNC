@@ -1,0 +1,42 @@
+{
+    "purple": {
+      "from_color": "#8b0ce0",
+      "to_color": "#ffffff",
+      "background": false
+    },
+    "background": {
+      "from_color": "#ff0000",
+      "to_color": "#ffffff",
+      "background": true
+    },
+    "green": {
+      "from_color": "#00ff00",
+      "to_color": "#dacbff",
+      "background": false
+    },
+    "promptcolor": {
+      "from_color": "#ff0000",
+      "to_color": "#ffffff",
+      "background": true
+    },
+    "background_white": {
+      "from_color": "#ffffff",
+      "to_color": "#ffffff",
+      "background": true
+    },
+    "black": {
+      "from_color": "#000000",
+      "to_color": "#000000",
+      "background": true
+    },
+    "pink": {
+      "from_color": "#FF1493",
+      "to_color": "#00FFFF",
+      "background": true
+    },
+    "sigma": {
+      "from_color": "#ff0000",
+      "to_color": "#ffffff",
+      "background": false
+    }
+}

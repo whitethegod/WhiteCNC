@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+            color: white;
+            overflow: hidden;
+        }
+
+        .background-iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        .content {
+            z-index: 1;
+            text-align: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <iframe class="background-iframe" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0"></iframe>
+
+    <div class="content">
+        <header>
+            <img src="" alt="">
+        </header>
+
+        <main>
+            {{ range $attack_sent_page := .Attack_sent }}
+            <div class="attack-info">
+                <p>Target: {{ $attack_sent_page.Target }}</p>
+                <p>Port: {{ $attack_sent_page.Port }}</p>
+                <p>Attack Time: {{ $attack_sent_page.Duration }}</p>
+                <p>Method: {{ $attack_sent_page.Method }}</p>
+                <p>Concurrents Used At Once: {{ $attack_sent_page.Concurrents }}</p>
+                <p>Ongoing: {{ $attack_sent_page.Running }}</p>
+                <p>Completed In: {{ $attack_sent_page.Tts }}</p>
+                <p>ASN: {{ $attack_sent_page.Asn }}</p>
+                <p>Region: {{ $attack_sent_page.Region }}</p>
+                <p>Country: {{ $attack_sent_page.Country }}</p>
+                <p>Country Code: {{ $attack_sent_page.Countrycode }}</p>
+                <p>City: {{ $attack_sent_page.City }}</p>
+                <p>ZIP: {{ $attack_sent_page.Zip }}</p>
+                <p>ISP: {{ $attack_sent_page.Isp }}</p>
+                <p>Org: {{ $attack_sent_page.Org }}</p>
+                <p>TimeZone: {{ $attack_sent_page.Timezone }}</p>
+                <p>Error: {{ $attack_sent_page.Error }}</p>
+            </div>
+            {{ end }}
+        </main>
+    </div>
+</body>
+</html>

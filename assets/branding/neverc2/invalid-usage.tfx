@@ -1,0 +1,3 @@
+Invalid usage!
+Usage: <method> <target> <port> <time>
+Example: dns 70.70.70.70 53 60

@@ -1,0 +1,28 @@
+<<$clear>>
+[8;29;80t
+[38;2;255;0;0m  ┏ [[38;2;255;255;255mAccount Details[38;2;255;0;0m]
+
+  [38;2;255;0;0m│ [38;2;255;255;255mUsername: [38;2;255;0;0m<<$user.Username>>
+  [38;2;255;0;0m│ [38;2;255;255;255mSSH Client: [38;2;255;0;0m<<$user.SSH_Client>>
+  [38;2;255;0;0m│ [38;2;255;255;255mCreated by: [38;2;255;0;0m<<$user.Created_by>>
+  [38;2;255;0;0m│ [38;2;255;255;255mUser total attacks: [38;2;255;0;0m<<$user.Total_attacks>>
+  [38;2;255;0;0m│ [38;2;255;255;255mUser Total Ongoing Attack Count: [38;2;255;0;0m<<$user.OngoingAttackCount>>
+
+[38;2;255;0;0m  ┏ [[38;2;255;255;255mPlan Details[38;2;255;0;0m]
+
+  [38;2;255;0;0m│ [38;2;255;255;255mAdmin: <<$user.Admin>>
+  [38;2;255;0;0m│ [38;2;255;255;255mMax Time: [38;2;255;0;0m<<$user.Maxtime>>
+  [38;2;255;0;0m│ [38;2;255;255;255mCooldown: [38;2;255;0;0m<<$user.Cooldown>>
+  [38;2;255;0;0m│ [38;2;255;255;255mConcurrents: [38;2;255;0;0m<<$user.Concurrents>>
+
+[38;2;255;0;0m  ┏ [[38;2;255;255;255mVip Access[38;2;255;0;0m]
+
+  [38;2;255;0;0m│ [38;2;255;255;255mVIP Access: <<$user.Vip>>
+  [38;2;255;0;0m│ [38;2;255;255;255mAPI Access: <<$user.Api_access>>
+  [38;2;255;0;0m│ [38;2;255;255;255mPrivate Access: <<$user.Private>>
+  [38;2;255;0;0m│ [38;2;255;255;255mBypass Blacklist Status: <<$user.Blacklist_bypass>>
+  [38;2;255;0;0m│ [38;2;255;255;255mBypass SpamProtection Status: <<$user.Spam_bypass>>
+  [38;2;255;0;0m│ [38;2;255;255;255mBypass PowerSaving Status: <<$user.Power_saving_bypass>>
+  [38;2;255;0;0m│ [38;2;255;255;255mDays Till Plan Expiry: <<$user.DaysTillPlanExpiry>>
+  [38;2;255;0;0m│ [38;2;255;255;255mAccount Creation Date: <<$user.AccountCreationDate>>
+  [38;2;255;0;0m│ [38;2;255;255;255mDays Since Plan Creation: <<$user.DaysSincePlanCreation>>

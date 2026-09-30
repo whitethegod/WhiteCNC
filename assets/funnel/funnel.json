@@ -1,0 +1,41 @@
+[
+  {
+    "enabled": true,
+    "enabledWithFunnel": true,
+    "method": "udp",
+    "group": "LAYER 4",
+    "defaultPort": 53,
+    "defaultTime": 60,
+    "minTime": 60,
+    "maxTime": 120,
+    "slots": 1,
+    "permission": [""],
+    "API": ["your-api-link.com"]
+  },
+  {
+    "enabled": true,
+    "enabledWithFunnel": true,
+    "method": "tcp",
+    "group": "LAYER 4",
+    "defaultPort": 53,
+    "defaultTime": 60,
+    "minTime": 60,
+    "maxTime": 120,
+    "slots": 1,
+    "permission": ["vip"],
+    "API": ["your-api-link.com"]
+  },
+  {
+    "enabled": true,
+    "enabledWithFunnel": true,
+    "method": "http",
+    "group": "LAYER 7",
+    "defaultPort": 53,
+    "defaultTime": 60,
+    "minTime": 60,
+    "maxTime": 120,
+    "slots": 1,
+    "permission": ["private"],
+    "API": ["your-api-link.com"]
+  }
+]

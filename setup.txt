@@ -1,0 +1,16 @@
+1. sudo apt update
+2. sudo apt install mysql-server
+3. sudo mysql_secure_installation
+4. sudo mysql -u root -p
+5. CREATE DATABASE your_database_name;
+6. CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+7. GRANT ALL PRIVILEGES ON *.* TO 'rzekanil'@'localhost';
+8. FLUSH PRIVILEGES;
+9. EXIT;
+10. setup mysql config in assets/config.json
+11. cd folder_with_cnc_files
+12. chmod 777 *
+13. screen ./watersystem
+
+min reqs. 1 core, 2 gb ram
+recommended if you wanna use gifs. 2-4 core, 4-8gb ram

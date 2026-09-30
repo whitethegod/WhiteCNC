@@ -1,0 +1,42 @@
+CNC:
+<<$cnc.Usedslots>> - used slots in this moment
+<<$cnc.Totalslots>> - total cnc slots from config
+<<$cnc.Online>> - online users count
+<<$cnc.Uptime>> - online users count
+<<$clear>> - clears screen
+
+User:
+<<$user.Admin>> - User's Admin status (true/false)
+<<$user.Vip>> - User's Vip status (true/false)
+<<$user.Private>> - User's Private status (true/false)
+<<$user.Expiry>> - User's expiry date
+<<$user.Concurrents>> - User's councurrents
+<<$user.Cooldown>> - User's Cooldown (in seconds)
+<<$user.Maxtime>> - User's maxtime (in seconds)
+<<$user.Api_access>> - User's api access status (true/false)
+<<$user.Power_saving_bypass>> - User's power saving bypass status (true/false)
+<<$user.Spam_bypass>> - User's spam bypass status (true/false)
+<<$user.Blacklist_bypass>> - User's blacklist bypass status (true/false)
+<<$user.SSH_Client>> - User's ssh client
+
+Attack:
+<<$attack.Target>> - attack target
+<<$attack.Port>> - attack port
+<<$attack.Time>> - attack time
+<<$attack.Method>> - attack method
+<<$attack.Country>> - target country
+<<$attack.Org>> - target org
+<<$attack.Asn>> - target asn
+<<$attack.Region>> - target region
+<<$attack.Date>> - attack date
+
+Funnel.json:
+{HOST} - target
+{PORT} - port
+{TIME} - time
+
+Gradient:
+<gradient name="color">text</gradient>
+<gradient name="color"><<$variable>></gradient>
+
+Go build -o neverc2 main.go

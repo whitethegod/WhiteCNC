@@ -1,0 +1,94 @@
+{
+  "global": {
+    "enabled": true,
+    "log_in_files": true
+  },
+  "Discord_Integration": {
+    "Attack_Sent": {
+      "webhook_url": "https://discord.com/api/webhooks/1442915204139843645/5DNRy_07-9LZ622lllX_5ZuyF-33lGQ3QDR_pobTsLXJJxagBev7STzulzr_g3IoJlk8",
+      "title": "USER ATTACK SENT SUCCESSFULLY",
+      "image": "https://pluspng.com/img-png/cute-ninja-png-ninja-clipart-kid-4-800.png",
+      "hex_color": "#FF5733",
+      "enabled": true
+    },
+    "Blacklisted_Host": {
+      "webhook_url": "https://discord.com/api/webhooks/1446635308367085589/TJ64-XhcQoqo2FoCcGm08iMvyUlIWC6mrySVmI-yOVPNZGCwU3kDFDGcbst6beD3bugw",
+      "title": "USER TRIED ATTACKING BLACKLIST",
+      "image": "https://pluspng.com/img-png/street-signs-png-hd-sign-stop-png-5000.png",
+      "hex_color": "#FF5733",
+      "enabled": true
+    },
+    "Admin_Actions": {
+      "webhook_url": "https://discord.com/api/webhooks/1446586146128920576/H5dEei0xdCB9zc_G7TWAhv63CQn-Sp-Q8m9E-TDhxSQnY52V84ww8nGh-kf1O2AAIWwP",
+      "title": "ADMIN ACTION ALERT",
+      "image": "https://pluspng.com/img-png/street-signs-png-hd-traffic-signs-road-sign-hd-png-300.png",
+      "hex_color": "#FF5733",
+      "enabled": true
+    },
+    "Account_Creation_Register": {
+      "webhook_url": "https://discord.com/api/webhooks/1446646272957350045/wxv_ZEuU99DLpSkyazZQI5zyOBo80dDkFgCtaYQF-Ti50afidjFT4hcTllmrNO-aVH1V",
+      "title": "API Logs",
+      "image": "https://pluspng.com/img-png/2-free-png-pluspng.com.png",
+      "hex_color": "#FF5733",
+      "enabled": true
+    },
+    "API_Logs": {
+      "webhook_url": "https://discord.com/api/webhooks/1446635214402097335/1fRZVg5M-daBZfvaQ5c4Z7h3FknnNwi9t7pcinOX4WWbOBdgHk-gkvNgy-c5tJWRyIhN",
+      "title": "API Logs",
+      "image": "https://pluspng.com/img-png/star-png-red-star-png-image-png-image-200.png",
+      "hex_color": "#FF5733",
+      "enabled": true
+    },
+    "User_Login": {
+      "webhook_url": "https://discord.com/api/webhooks/1446635214402097335/1fRZVg5M-daBZfvaQ5c4Z7h3FknnNwi9t7pcinOX4WWbOBdgHk-gkvNgy-c5tJWRyIhN",
+      "title": "USER LOGIN DETECTED",
+      "image": "https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png",
+      "hex_color": "#00FF00",
+      "enabled": true
+    }
+  },
+  "Telegram_Integration": {
+    "Attack_Sent": {
+      "token": "8518563844:AAHwxPEtXhOqkleQrqMt_yZdAZbI8HloX_c",
+      "chat_id": "7224888442",
+      "title": "USER ATTACK SENT SUCCESSFULLY",
+      "enabled": true
+    },
+    "Blacklisted_Host": {
+      "token": "8518563844:AAHwxPEtXhOqkleQrqMt_yZdAZbI8HloX_c",
+      "chat_id": "7224888442",
+      "title": "USER TRIED ATTACKING BLACKLIST",
+      "enabled": true
+    },
+    "Admin_Actions": {
+      "token": "8518563844:AAHwxPEtXhOqkleQrqMt_yZdAZbI8HloX_c",
+      "chat_id": "7224888442",
+      "title": "ADMIN ACTION ALERT",
+      "enabled": true
+    },
+    "Account_Creation_Register": {
+      "token": "8518563844:AAHwxPEtXhOqkleQrqMt_yZdAZbI8HloX_c",
+      "chat_id": "7224888442",
+      "title": "User Register Succefully",
+      "enabled": true
+    },
+    "API_Logs": {
+      "token": "8518563844:AAHwxPEtXhOqkleQrqMt_yZdAZbI8HloX_c",
+      "chat_id": "7224888442",
+      "title": "Api Logs ALERT",
+      "enabled": true
+    },
+    "Report_Logs": {
+      "token": "8518563844:AAHwxPEtXhOqkleQrqMt_yZdAZbI8HloX_c",
+      "chat_id": "7224888442",
+      "title": "Report ACTION ALERT",
+      "enabled": true
+    },
+    "User_Login": {
+      "token": "8518563844:AAHwxPEtXhOqkleQrqMt_yZdAZbI8HloX_c",
+      "chat_id": "7224888442",
+      "title": "USER LOGIN DETECTED",
+      "enabled": true
+    }
+  }
+}
